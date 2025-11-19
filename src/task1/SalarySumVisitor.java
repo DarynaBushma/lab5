@@ -21,7 +21,6 @@ public class SalarySumVisitor implements UniversityVisitor {
      */
     @Override
     public void visitStudent(Student student) {
-        // No action for Student
     }
 
     /**
@@ -29,7 +28,6 @@ public class SalarySumVisitor implements UniversityVisitor {
      */
     @Override
     public void visitDepartment(Department department) {
-        // No action for Department
     }
 
     /**
@@ -37,7 +35,6 @@ public class SalarySumVisitor implements UniversityVisitor {
      */
     @Override
     public void visitUniversity(University university) {
-        // No action for University
     }
 
     /**

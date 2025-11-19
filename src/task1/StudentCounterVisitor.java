@@ -21,7 +21,6 @@ public class StudentCounterVisitor implements UniversityVisitor {
      */
     @Override
     public void visitTeacher(Teacher teacher) {
-        // No action for Teacher
     }
 
     /**
@@ -29,7 +28,6 @@ public class StudentCounterVisitor implements UniversityVisitor {
      */
     @Override
     public void visitDepartment(Department department) {
-        // No action for Department count
     }
 
     /**
@@ -37,7 +35,6 @@ public class StudentCounterVisitor implements UniversityVisitor {
      */
     @Override
     public void visitUniversity(University university) {
-        // No action for University count
     }
 
     /**
