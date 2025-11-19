@@ -25,8 +25,8 @@ public class RemoveRequestCommand implements Action {
      */
     @Override
     public void execute() {
-        beforeState = receiver.createMemento(); // 1. Save Memento (Originator)
-        receiver.removeRequest(requestId);      // 2. Execute operation (Receiver)
+        beforeState = receiver.createMemento();
+        receiver.removeRequest(requestId);
         System.out.println("[EXECUTE] Command: Remove request with ID: " + requestId);
     }
 
@@ -37,7 +37,7 @@ public class RemoveRequestCommand implements Action {
     @Override
     public void undo() {
         if (beforeState != null) {
-            receiver.restoreMemento(beforeState); // 3. Restore previous state
+            receiver.restoreMemento(beforeState);
             System.out.println("[UNDO] Command: Restored state (Undo Remove ID: " + requestId + ").");
         } else {
             System.out.println("[UNDO] Cannot undo Remove Command: Memento not available.");

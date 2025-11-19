@@ -47,7 +47,6 @@ public class Teacher implements UniversityElement {
      */
     @Override
     public void coreBusinessOperation() {
-        // Implementation of business logic (stub)
         System.out.println("Method 'coreBusinessOperation' of Teacher '" + name + "' called. Salary: " + salary);
     }
 }

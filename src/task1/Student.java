@@ -39,7 +39,6 @@ public class Student implements UniversityElement {
      */
     @Override
     public void coreBusinessOperation() {
-        // Implementation of business logic (stub)
         System.out.println("Method 'coreBusinessOperation' of Student '" + name + "' called.");
     }
 }

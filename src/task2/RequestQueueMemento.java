@@ -1,7 +1,6 @@
 package task2;
 
 import java.util.List;
-import java.util.ArrayList;
 
 /**
  * The Memento object that stores the internal state of the RequestQueue (Originator).

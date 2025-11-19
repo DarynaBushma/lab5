@@ -21,7 +21,6 @@ public class University extends Department {
     @Override
     public void accept(UniversityVisitor visitor) {
         visitor.visitUniversity(this);
-        // Calls accept on all child elements
         for (UniversityElement element : getElements()) {
             element.accept(visitor);
         }

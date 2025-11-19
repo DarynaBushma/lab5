@@ -60,7 +60,6 @@ public class Department implements UniversityElement {
      */
     @Override
     public void coreBusinessOperation() {
-        // Implementation of business logic (stub)
         System.out.println("Method 'coreBusinessOperation' of Department '" + name + "' called.");
         for (UniversityElement element : elements) {
             element.coreBusinessOperation();

@@ -28,8 +28,8 @@ public class ChangePriorityCommand implements Action {
      */
     @Override
     public void execute() {
-        beforeState = receiver.createMemento(); // 1. Save Memento (Originator)
-        receiver.changePriority(requestId, newPriority); // 2. Execute operation (Receiver)
+        beforeState = receiver.createMemento();
+        receiver.changePriority(requestId, newPriority);
         System.out.println("[EXECUTE] Command: Change priority of request ID: " + requestId + " to " + newPriority);
     }
 
@@ -40,7 +40,7 @@ public class ChangePriorityCommand implements Action {
     @Override
     public void undo() {
         if (beforeState != null) {
-            receiver.restoreMemento(beforeState); // 3. Restore previous state
+            receiver.restoreMemento(beforeState);
             System.out.println("[UNDO] Command: Restored state (Undo Change Priority ID: " + requestId + ").");
         } else {
             System.out.println("[UNDO] Cannot undo Change Priority Command: Memento not available.");

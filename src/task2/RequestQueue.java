@@ -51,7 +51,6 @@ public class RequestQueue {
      * @return A new RequestQueueMemento object with a deep copy of the state.
      */
     public RequestQueueMemento createMemento() {
-        // Create a deep copy of the list for the memento state
         List<HttpRequest> stateCopy = new ArrayList<>();
         for (HttpRequest req : requests) {
             stateCopy.add(new HttpRequest(req.getId(), req.url, req.getPriority(), req.method));
