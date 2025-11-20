@@ -18,7 +18,7 @@ public class CommandManager {
     public void executeCommand(Action command) {
         System.out.println("\n--- Executing Command: " + command.getClass().getSimpleName() + " ---");
         command.execute();
-        history.push(command); // Store the executed command
+        history.push(command);
     }
 
     /**
